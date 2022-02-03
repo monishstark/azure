@@ -20,6 +20,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
+      <button>Proceed</button>
     </div>
   );
 }

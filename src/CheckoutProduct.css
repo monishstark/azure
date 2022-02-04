@@ -1,0 +1,29 @@
+.checkoutProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 10px 20px 10px;
+  height: 250px;
+  width: 65%;
+}
+.checkoutProduct_info {
+  padding-left: 20px;
+}
+
+.checkoutProduct_info > button {
+}
+
+.checkoutProduct_image {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.checkoutProduct_title {
+}
+.checkoutProduct_disc {
+}

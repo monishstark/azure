@@ -20,9 +20,12 @@
 }
 
 .product > button {
-  background: #b8cd42;
-  border: 1px solid;
-  margin-top: 10px;
+  position: relative;
+  background: #ffffff;
+  border: #ffffff;
+  margin-top: 0%;
+  right: -50%;
+
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
@@ -35,4 +38,10 @@
   width: 100%;
   height: 100px;
   margin-bottom: 15px;
+  font-weight: bold;
+}
+.product_disc {
+  margin-top: 2px;
+  font-weight: 100;
+  font-style: oblique;
 }

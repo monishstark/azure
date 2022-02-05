@@ -19,6 +19,7 @@
   flex: 1;
   align-items: center;
   border-radius: 25px;
+  margin-left: 49%;
 }
 
 .header_searchInput {
@@ -36,24 +37,27 @@
 .header_optionlineone {
   font-size: 10px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .header_optionlinetwo {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 800;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 253, 253);
 }
 
 .header_optionBasket {
   display: flex;
-  align-items: center;
-  color: rgb(0, 0, 0);
+
+  color: rgb(255, 253, 253);
 }
 
 .header_basketCount {
+  display: flex;
+  padding-bottom: 11px;
   margin-left: 5px;
   margin-right: 10px;
+  margin-top: 1px;
 }
 
 .header_nav {

@@ -8,9 +8,11 @@
 .home_row {
   display: flex;
   z-index: 1;
+  margin-top: 1px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
+  padding-top: -30px;
 }
 
 .home_image {

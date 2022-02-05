@@ -4,6 +4,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
   return (
@@ -22,10 +24,7 @@ function Header() {
 
       <div className="header_nav">
         <div className="header_option">
-          <span className="header_optionlineone">hello guest</span>
-          <span className="header_optionlinetwo">sign in</span>
-        </div>
-        <div className="header_option">
+          <PermIdentityOutlinedIcon className="header_profile" />
           <span className="header_optionlineone">Profile</span>
         </div>
         <Link to="/checkout">

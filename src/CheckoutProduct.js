@@ -1,18 +1,21 @@
 import React from "react";
 import "./CheckoutProduct.css";
+import CloseIcon from "@mui/icons-material/Close";
 
-function CheckoutProduct({ title, image, price, disc }) {
+function CheckoutProduct({ id, title, image, price, info }) {
   return (
     <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} />
       <div className="checkoutProduct_info">
         <p className="checkoutProduct_title">{title}</p>
-        <p className="checkoutProduct_disc">{disc}</p>
+        <div className="checkoutProducr_disc">{info}</div>
         <p className="checkoutProduct_price">
           <small>₹</small>
           <strong>{price}</strong>
         </p>
-        <button>remove</button>
+      </div>
+      <div className="close">
+        <CloseIcon />
       </div>
     </div>
   );

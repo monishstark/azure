@@ -1,8 +1,17 @@
 import React from "react";
 import "./CheckoutProduct.css";
 import CloseIcon from "@mui/icons-material/Close";
+import { useStateValue } from "./StateProvider";
 
 function CheckoutProduct({ id, title, image, price, info }) {
+  const [{ basket }, dispatch] = useStateValue();
+
+  const removeFromBasket = () => {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
   return (
     <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} />
@@ -14,9 +23,9 @@ function CheckoutProduct({ id, title, image, price, info }) {
           <strong>{price}</strong>
         </p>
       </div>
-      <div className="close">
+      <button onClick={removeFromBasket} className="close">
         <CloseIcon />
-      </div>
+      </button>
     </div>
   );
 }

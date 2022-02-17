@@ -13,11 +13,19 @@
 .checkoutProduct_title {
   font-weight: 700;
   font-size: medium;
+  margin-right: 20px;
 }
 .checkoutProducr_disc {
   font-weight: 300;
   margin-top: 5px;
   margin-right: 20px;
+}
+.close {
+  position: absolute;
+  right: 50.5%;
+
+  background: #ffffff;
+  border: #ffffff;
 }
 
 .checkoutProduct_info {
@@ -26,15 +34,9 @@
 .checkoutProduct_price {
   margin-top: 10px;
 }
-.checkoutProduct_info > button {
-}
 
 .checkoutProduct_image {
   object-fit: contain;
   max-width: 100%;
   max-height: 200px;
-}
-.close {
-  position: absolute;
-  right: 51%;
 }
